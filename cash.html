@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto en Venta</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+    background-color: #5633a8;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+        .container {
+            margin-top: 50px;
+        }
+    
+.button:hover {
+    background-color: #5945a0;
+}
+        
+        #backButton {
+    position:absolute;
+    top: 50px;
+    left: 15px;
+    background-color: #846b99;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+        img {
+            max-width: 70%;
+            height: auto;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+            padding-left: 80px; 
+            padding-right: 80px; 
+        }
+        .buy-button {
+            display: inline-block;
+            margin-top: 40px; /* Aumenta la separación */
+            padding: 10px 20px;
+            background-color: #b3369e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .buy-button:hover {
+            background-color: #702188;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <button id="backButton">Retroceder</button>
+    <script>
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+    <div class="header">
+        <h1>Samuel's Key-Chains</h1>
+        <p>Los llaveros más originales para tí</p>
+    </div>
+    <div class="container">
+        <h1>Producto en Venta</h1>
+        <img src="fondo.jpg" alt="Descripción de la imagen">
+        <div class="description">Este llavero combina cuero genuino y metal resistente. Tiene un anillo grande para varias llaves y un gancho para colgarlo fácilmente. Disponible en los colores, negro, blanco, dorado, plateado, es elegante y duradero.</div>
+        <a href="Pay.html" class="buy-button">Agregar a carrito</a>
+    </div>
+</body>
+</html>

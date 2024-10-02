@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    position: relative;
+    height: 100vh;
+}
+
+.header {
+    background-color: #5633a8;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.button:hover {
+    background-color: #5945a0;
+   
+}
+
+#backButton {
+    position:absolute;
+    top: 50px;
+    left: 15px;
+    background-color: #846b99;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#backButton:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(40% - 20px); /* Adjust height to account for header */
+    flex-direction: column;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin-top: 20px; /* Adjust spacing between elements */
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Reduce margin to bring elements closer */
+    position: relative;
+}
+.h4 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.add-to-cart {
+    background-color: #68388f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}

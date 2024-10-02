@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+    <button id="backButton">Retroceder</button>
+    <script>
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            position: relative;
+            height: 100vh;
+        }
+        .header {
+            background-color: #5633a8;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        #backButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #68388f;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        #backButton:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        .add-to-cart {
+            background-color: #68388f;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+        .cart {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+        .cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+        .cart-items li {
+            margin: 10px 0;
+        }
+        .total-price {
+            font-weight: bold;
+        }
+    </style>
+    <div class="header">
+        <h1>Samuel's Key-Chains</h1>
+        <p>Los llaveros más originales para tí</p>
+    </div>
+    <div class="container">
+        <div class="product" data-name="Producto 1" data-price="10">
+            <h2>Llavreo DL 1</h2>
+            <h4> Días a esperar: 5</h4>
+            <p>Precio: $10</p>
+            <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+        <div class="product" data-name="Producto 2" data-price="15">
+            <h2>Llavreo DL 2</h2>
+            <h4>Días a esperar: 3</h4>
+            <p>Precio: $15</p>
+            <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul class="cart-items"></ul>
+        <p class="total-price">Total: $0</p>
+    </div>
+    <script src="pay.js"></script>
+</body>
+</html>
+
